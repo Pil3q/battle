@@ -98,6 +98,7 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 require_relative '../app.rb'
+require_relative './features/web_helpers.rb'
 ENV['RACK_ENV']="test"
 require 'capybara'
 require 'rspec'
